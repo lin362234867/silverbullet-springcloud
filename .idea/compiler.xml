@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="eureka-api" />
+        <module name="eureka-client" />
+        <module name="eureka-dashboard" />
+        <module name="eureka-feign" />
+        <module name="eureka-provider" />
+        <module name="eureka-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="config-server" target="1.8" />
+      <module name="eureka-api" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-dashboard" target="1.8" />
+      <module name="eureka-feign" target="1.8" />
+      <module name="eureka-provider" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="silverbullet-springcloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
