@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\config-server\config-server.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\config-server\config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-api/eureka-api.iml" filepath="$PROJECT_DIR$/eureka-api/eureka-api.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\eureka-api\eureka-api.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\eureka-api\eureka-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\eureka-client\eureka-client.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\eureka-client\eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-dashboard/eureka-dashboard.iml" filepath="$PROJECT_DIR$/eureka-dashboard/eureka-dashboard.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\eureka-dashboard\eureka-dashboard.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\eureka-dashboard\eureka-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-feign/eureka-feign.iml" filepath="$PROJECT_DIR$/eureka-feign/eureka-feign.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\eureka-feign\eureka-feign.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\eureka-feign\eureka-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-provider/eureka-provider.iml" filepath="$PROJECT_DIR$/eureka-provider/eureka-provider.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\eureka-provider\eureka-provider.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\eureka-provider\eureka-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://D:\workspace\id_workspace\silverbullet-springcloud\eureka-server\eureka-server.iml" filepath="D:\workspace\id_workspace\silverbullet-springcloud\eureka-server\eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/silverbullet-springcloud.iml" filepath="$PROJECT_DIR$/silverbullet-springcloud.iml" />
     </modules>
   </component>
