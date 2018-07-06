@@ -8,10 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-client" />
         <module name="config-server" />
+        <module name="consul-client" />
+        <module name="consul-gateway" />
+        <module name="consul-provider" />
         <module name="eureka-api" />
         <module name="eureka-client" />
         <module name="eureka-dashboard" />
         <module name="eureka-feign" />
+        <module name="eureka-gateway" />
         <module name="eureka-provider" />
         <module name="eureka-server" />
       </profile>
@@ -19,10 +23,14 @@
     <bytecodeTargetLevel target="1.8">
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="consul-client" target="1.8" />
+      <module name="consul-gateway" target="1.8" />
+      <module name="consul-provider" target="1.8" />
       <module name="eureka-api" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-dashboard" target="1.8" />
       <module name="eureka-feign" target="1.8" />
+      <module name="eureka-gateway" target="1.8" />
       <module name="eureka-provider" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="silverbullet-springcloud" target="1.8" />

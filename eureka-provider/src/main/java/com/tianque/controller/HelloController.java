@@ -2,7 +2,11 @@ package com.tianque.controller;
 
 import com.tianque.api.HelloApi;
 import com.tianque.dto.User;
-import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * handler method 参数绑定常用的注解,我们根据他们处理的Request的不同内容部分分为四类：（主要讲解常用类型）
@@ -13,17 +17,15 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 public class HelloController implements HelloApi{
+    private static Logger log = LoggerFactory.getLogger(HelloController.class);
 
     public String hello(){
+        log.info("123124");
         return "hello";
     }
 
     public String hello(@RequestParam String name){
-        try {
-            Thread.sleep(2005);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        log.info("==================hello" +name);
         return "hello" + name;
     }
 

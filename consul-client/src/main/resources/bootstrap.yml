@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: consul-client
+  cloud:
+    consul:
+      discovery:
+#        enabled: true
+#        register: true
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 5s
+        instance-id: consul-client
+      host: localhost
+      port: 8500
+
+server:
+  port: 19002
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  health:
+    consul:
+      enabled: true

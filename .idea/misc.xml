@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/consul-client" />
+    <file type="web" url="file://$PROJECT_DIR$/consul-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/consul-provider" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-client" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-dashboard" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-feign" />
+    <file type="web" url="file://$PROJECT_DIR$/eureka-gateway" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-provider" />
   </component>
   <component name="MavenProjectsManager">
@@ -15,6 +19,10 @@
         <option value="$PROJECT_DIR$/eureka-api/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-client/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-gateway/pom.xml" />
       </list>
     </option>
   </component>

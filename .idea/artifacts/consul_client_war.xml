@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="consul-client:war">
+    <output-path>$PROJECT_DIR$/consul-client/target</output-path>
+    <root id="archive" name="consul-client-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="consul-client:war exploded" />
+    </root>
+  </artifact>
+</component>

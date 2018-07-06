@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: consul-gateway
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+        port: 8500
+        enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: host_route
+          uri: http://192.168.100.181:9111/
+          predicates:
+          - Path=/test/**
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+
+management:endpoints.web.exposure.include: '*'
+server:
+  port: 15000

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="consul-gateway:war">
+    <output-path>$PROJECT_DIR$/consul-gateway/target</output-path>
+    <root id="archive" name="consul-gateway-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="consul-gateway:war exploded" />
+    </root>
+  </artifact>
+</component>

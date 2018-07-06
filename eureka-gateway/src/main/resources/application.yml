@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: eureka-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: host_route
+          uri: http://192.168.100.181:9111/
+          predicates:
+          - Path=/test/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver1:11001/eureka/,http://eurekaserver2:11002/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+
+management.endpoints.web.exposure.include: '*'
+server:
+  port: 15000

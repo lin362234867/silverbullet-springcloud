@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 10s
+        instance-id: consul-provider
+        enabled: true
+  application:
+    name: consul-provider
+server:
+  port: 19001
+
+management.endpoints.web.exposure.include: '*'
+
+#  health:
+#    consul:
+#      enabled: true
