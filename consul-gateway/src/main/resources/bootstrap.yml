@@ -29,32 +29,6 @@ spring:
               redis-rate-limiter.burstCapacity: 100  # 流速 每秒
               key-resolver: "#{@remoteAddrKeyResolver}" #SPEL表达式去的对应的bean
           - StripPrefix=1
-logging:
-  level:
-    com.tianque: INFO
-    org.springframework.cloud.gateway: ERROR
-    org.springframework.http.server.reactive: ERROR
-    org.springframework.web.reactive: ERROR
-    reactor.ipc.netty: ERROR
 
 management.endpoints.web.exposure.include: '*'
-server:
-  port: 20000
 
-
-#  黑白名单模式:
-#  1.white_black_model 该配置项作为是否使用黑白名单的依据：
-#   0：不使用，2：仅使用白名单 3：仅使用黑名单
-#  2.STR_LIST 属性格式为ip|ip|ip| 必须以"ip|"一组
-#  3.MATCH_STR 支持模糊匹配。使用sql的%_两个通配符,%表示0-N个任意字符，_表示单个任意字符,以及正则表达式规范
-#  4.STR_LIST 跟MATCH_STR同时存在时,取合集
-silver:
-  config:
-    ip-limit:
-      white-black-model: 1
-      white:
-        match-str: 192.168.*
-    interface-limit:
-      white-black-model: 1
-      white:
-        match-str: /CONSUL-PROVIDER/hello1%

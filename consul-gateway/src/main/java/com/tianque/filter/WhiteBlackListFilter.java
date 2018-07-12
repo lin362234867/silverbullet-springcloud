@@ -24,9 +24,9 @@ import java.util.regex.Pattern;
 /**
  #  黑白名单模式:
  #  1.white_black_model 该配置项作为是否使用黑白名单的依据：
- #   0：不使用，2：仅使用白名单 3：仅使用黑名单
+ #   0：不使用，1：仅使用白名单 2：仅使用黑名单
  #  2.STR_LIST 属性格式为ip|ip|ip| 必须以"ip|"一组
- #  3.MATCH_STR 支持模糊匹配。使用sql的%_两个通配符,%表示0-N个任意字符，_表示单个任意字符
+ #  3.MATCH_STR 支持模糊匹配。使用sql的%_两个通配符,%表示0-N个任意字符，_表示单个任意字符,以及正则表达式规范
  #  4.STR_LIST 跟MATCH_STR同时存在时,取合集
  */
 @AutoConfigureBefore({SilverConfigIpLimitProperties.class, SilverConfigInterfaceLimitProperties.class})
@@ -132,7 +132,7 @@ public class WhiteBlackListFilter implements GlobalFilter, Ordered {
      */
     private String getIpAddr(ServerHttpRequest request) {
         String ip = request.getHeaders().toSingleValueMap().get("X-Forwarded-For");
-        System.out.println("X-Forwarded-For ip: " + ip);
+        logger.debug("X-Forwarded-For ip: " + ip);
         if (ip != null && ip.length() != 0 && !"unknown".equalsIgnoreCase(ip)) {
             // 多次反向代理后会有多个ip值，第一个ip才是真实ip
             if( ip.indexOf(",")!=-1 ){
@@ -141,29 +141,28 @@ public class WhiteBlackListFilter implements GlobalFilter, Ordered {
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeaders().toSingleValueMap().get("Proxy-Client-IP");
-            System.out.println("Proxy-Client-IP ip: " + ip);
+            logger.debug("Proxy-Client-IP ip: " + ip);
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeaders().toSingleValueMap().get("WL-Proxy-Client-IP");
-            System.out.println("WL-Proxy-Client-IP ip: " + ip);
+            logger.debug("WL-Proxy-Client-IP ip: " + ip);
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip =request.getHeaders().toSingleValueMap().get("HTTP_CLIENT_IP");
-            System.out.println("HTTP_CLIENT_IP ip: " + ip);
+            logger.debug("HTTP_CLIENT_IP ip: " + ip);
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeaders().toSingleValueMap().get("HTTP_X_FORWARDED_FOR");
-            System.out.println("HTTP_X_FORWARDED_FOR ip: " + ip);
+            logger.debug("HTTP_X_FORWARDED_FOR ip: " + ip);
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeaders().toSingleValueMap().get("X-Real-IP");
-            System.out.println("X-Real-IP ip: " + ip);
+            logger.debug("X-Real-IP ip: " + ip);
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddress().getHostString();
-            System.out.println("getRemoteAddr ip: " + ip);
+            logger.debug("getRemoteAddr ip: " + ip);
         }
-        System.out.println("获取客户端ip: " + ip);
         return ip;
     }
 }
