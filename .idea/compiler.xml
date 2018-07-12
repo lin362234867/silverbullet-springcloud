@@ -18,6 +18,7 @@
         <module name="eureka-gateway" />
         <module name="eureka-provider" />
         <module name="eureka-server" />
+        <module name="silverbullet-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -33,6 +34,7 @@
       <module name="eureka-gateway" target="1.8" />
       <module name="eureka-provider" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="silverbullet-common" target="1.7" />
       <module name="silverbullet-springcloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>

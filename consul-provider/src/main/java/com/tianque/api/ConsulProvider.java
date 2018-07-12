@@ -1,7 +1,7 @@
 package com.tianque.api;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import com.tianque.dto.User;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,8 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class ConsulProvider {
-    @RequestMapping(value = "hello",method = RequestMethod.GET)
-    public String hello() {
-        return "Hello world";
+    @GetMapping(value = "hello")
+    public void hello() {
+        System.out.println("hello world");
+    }
+
+    @GetMapping(value = "hello1")
+    public String hello1() {
+        return "12345";
+    }
+
+    @GetMapping(value = "hello2")
+    public User hello2() {
+        return  new User("name",1);
     }
 }

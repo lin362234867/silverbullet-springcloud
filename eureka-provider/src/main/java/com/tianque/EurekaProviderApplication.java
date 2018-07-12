@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 //hystrix.stream必须加的部分
-@EnableHystrix
 @EnableDiscoveryClient
+@EnableHystrix
 @SpringBootApplication
 public class EurekaProviderApplication {
 

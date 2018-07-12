@@ -1,0 +1,85 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType":"com.tianque.config.SilverConfigProperties",
+      "name":"silver.config",
+      "type":"com.tianque.config.SilverConfigProperties"
+    },
+    {
+      "sourceType":"com.tianque.config.SilverConfigIpLimitProperties",
+      "name":"silver.config.ip-limit",
+      "type":"com.tianque.config.SilverConfigProperties"
+    },
+    {
+      "sourceType":"com.tianque.config.SilverConfigInterfaceLimitProperties",
+      "name":"silver.config.interface-limit",
+      "type":"com.tianque.config.SilverConfigProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.tianque.config.SilverConfigIpLimitProperties",
+      "defaultValue": 0,
+      "name": "silver.config.ip-limit.white-black-model",
+      "description": "IP黑白名单模式",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigIpLimitProperties",
+      "name": "silver.config.ip-limit.white.str-list",
+      "description": "IP白名单列表",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigIpLimitProperties",
+      "name": "silver.config.ip-limit.white.str-list",
+      "description": "IP白名单匹配",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigIpLimitProperties",
+      "name": "silver.config.ip-limit.black.str-list",
+      "description": "IP黑名单列表",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigIpLimitProperties",
+      "name": "silver.config.ip-limit.black.str-list",
+      "description": "IP黑名单匹配",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigInterfaceLimitProperties",
+      "defaultValue": 0,
+      "name": "silver.config.interface-limit.white-black-model",
+      "description": "Interface黑白名单模式.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigInterfaceLimitProperties",
+      "name": "silver.config.interface-limit.white.str-list",
+      "description": "接口白名单列表.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigInterfaceLimitProperties",
+      "name": "silver.config.interface-limit.white.match-str",
+      "description": "接口白名单匹配.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigInterfaceLimitProperties",
+      "name": "silver.config.interface-limit.black.str-list",
+      "description": "接口黑名单列表.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tianque.config.SilverConfigInterfaceLimitProperties",
+      "name": "silver.config.interface-limit.black.match-str",
+      "description": "接口黑名单匹配.",
+      "type": "java.lang.String"
+    }
+
+  ]
+}

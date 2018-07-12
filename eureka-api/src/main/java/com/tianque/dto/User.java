@@ -1,25 +1,14 @@
 package com.tianque.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 /**
  * Created by QQ on 2018/6/29.
  */
+@Data
+@AllArgsConstructor
 public class User {
     String name;
     Integer age;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 }

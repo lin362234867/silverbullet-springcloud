@@ -5,6 +5,7 @@ import com.tianque.dto.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,9 +16,16 @@ import org.springframework.web.bind.annotation.RestController;
  C、处理request body部分的注解：@RequestParam,  @RequestBody;
  D、处理attribute类型是注解： @SessionAttributes, @ModelAttribute;
  */
+@RequestMapping("/")
 @RestController
 public class HelloController implements HelloApi{
     private static Logger log = LoggerFactory.getLogger(HelloController.class);
+
+    @Override
+    public Integer hello1() {
+        log.info("555555555555555555");
+        return 1;
+    }
 
     public String hello(){
         log.info("123124");

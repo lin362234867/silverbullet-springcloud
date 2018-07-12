@@ -26,6 +26,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!--eureka-api导入-->
+		<dependency>
+			<groupId>com.tianque</groupId>
+			<artifactId>eureka-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 

@@ -16,6 +16,7 @@
         <module>eureka-feign</module>
         <module>eureka-api</module>
         <module>eureka-dashboard</module>
+        <module>silverbullet-common</module>
     </modules>
     <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
@@ -46,10 +47,11 @@
             <artifactId>logstash-logback-encoder</artifactId>
             <version>5.1</version>
         </dependency>
-        <dependency>
+        <!--引入 tomcat 会引起gateway报错！！！java.lang.ClassCastException: org.springframework.core.io.buffer.DefaultDataBufferFactory cannot be cast to org.springframework.core.io.buffer.NettyDataBufferFactory-->
+<!--        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-        </dependency>
+        </dependency>-->
         <!--<dependency>-->
             <!--<groupId>org.springframework.cloud</groupId>-->
             <!--<artifactId>spring-cloud-starter-oauth2</artifactId>-->
@@ -58,6 +60,18 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
     <!--给出Maven部署当前项目的构件到远程库时，关于远程库的配置-->
@@ -158,6 +172,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration><fork>true</fork></configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
