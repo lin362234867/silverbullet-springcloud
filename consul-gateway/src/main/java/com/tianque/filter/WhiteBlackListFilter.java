@@ -40,7 +40,7 @@ public class WhiteBlackListFilter implements GlobalFilter, Ordered {
     private ConfigProperties commonConfigProperties;
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        @NonNull String realIp = getIpAddr(exchange.getRequest());
+        @NonNull final String realIp = getIpAddr(exchange.getRequest());
         @NonNull final String requestUrl = exchange.getRequest().getPath().pathWithinApplication().value();
         switch (commonConfigProperties.IP_WHITE_BLACK_MODEL){
             case WhiteBlackConstant.NOUSING:
