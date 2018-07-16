@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/authorization-server" />
     <file type="web" url="file://$PROJECT_DIR$/consul-client" />
     <file type="web" url="file://$PROJECT_DIR$/consul-gateway" />
     <file type="web" url="file://$PROJECT_DIR$/consul-provider" />
@@ -23,6 +24,7 @@
         <option value="$PROJECT_DIR$/consul-provider/pom.xml" />
         <option value="$PROJECT_DIR$/consul-client/pom.xml" />
         <option value="$PROJECT_DIR$/consul-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/authorization-server/pom.xml" />
       </list>
     </option>
   </component>

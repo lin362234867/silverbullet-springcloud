@@ -126,6 +126,9 @@
           <element id="archive" name="eureka-api-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="eureka-api" />
           </element>
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.47" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.4" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:1.0" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:2.0.1.RELEASE" />

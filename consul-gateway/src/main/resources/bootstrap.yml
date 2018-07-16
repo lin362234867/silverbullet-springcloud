@@ -23,12 +23,13 @@ spring:
           predicates:
           - Path=/CONSUL-PROVIDER/**
           filters:
+          - StripPrefix=1
           - name: RequestRateLimiter
             args:
               redis-rate-limiter.replenishRate: 100  # 令牌桶的容积
               redis-rate-limiter.burstCapacity: 100  # 流速 每秒
               key-resolver: "#{@remoteAddrKeyResolver}" #SPEL表达式去的对应的bean
-          - StripPrefix=1
+
 
 management.endpoints.web.exposure.include: '*'
 

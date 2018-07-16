@@ -22,7 +22,8 @@ import reactor.core.publisher.Mono;
 import java.util.regex.Pattern;
 
 /**
- #  黑白名单模式:
+ * @author  linlinan
+ #  黑白名单过滤器:
  #  1.white_black_model 该配置项作为是否使用黑白名单的依据：
  #   0：不使用，1：仅使用白名单 2：仅使用黑名单
  #  2.STR_LIST 属性格式为ip|ip|ip| 必须以"ip|"一组
