@@ -31,3 +31,13 @@
 **springcloud 集成consul:**  
 pom 加入 consul-discovery  
 配置文件（注：/actuator/health是新的健康端点）
+
+## rabbitmq ##
+启动rabbitmq：rabbitmq-service start
+关闭rabbitmq：rabbitmq-service stop
+查看所有的队列：rabbitmqctl list_queues
+清除所有的队列：rabbitmqctl reset
+关闭应用：rabbitmqctl stop_app
+启动应用：rabbitmqctl start_app
+默认地址：http://localhost:15672
+默认用户：guest:guest

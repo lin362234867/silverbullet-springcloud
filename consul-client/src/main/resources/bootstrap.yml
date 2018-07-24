@@ -20,6 +20,3 @@ management:
     web:
       exposure:
         include: health
-  health:
-    consul:
-      enabled: true

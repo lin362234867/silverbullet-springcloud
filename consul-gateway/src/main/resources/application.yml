@@ -9,13 +9,13 @@ silver:
     ip-limit:
       white-black-model: 1
       white:
-        match-str: 192.168.*
+        match-str: "%"
     interface-limit:
       white-black-model: 1
       white:
         match-str: /CONSUL-PROVIDER/hello1%
 server:
-  port: 20000
+  port: 21000
 
 logging:
   level:
