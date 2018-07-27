@@ -116,6 +116,7 @@
           <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.2" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-config-client:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:2.0.0.RELEASE" />
@@ -143,7 +144,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: net.logstash.logback:logstash-logback-encoder:5.1" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

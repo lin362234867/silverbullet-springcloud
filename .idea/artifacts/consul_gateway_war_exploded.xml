@@ -80,6 +80,8 @@
           <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.23.Final" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-webflux:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.0.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.10.0" />
@@ -153,8 +155,6 @@
           <element id="library" level="project" name="Maven: net.logstash.logback:logstash-logback-encoder:5.1" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.5" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

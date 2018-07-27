@@ -10,6 +10,7 @@
         <module name="config-client" />
         <module name="config-server" />
         <module name="consul-client" />
+        <module name="consul-config" />
         <module name="consul-gateway" />
         <module name="consul-provider" />
         <module name="eureka-api" />
@@ -27,6 +28,7 @@
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="consul-client" target="1.8" />
+      <module name="consul-config" target="1.8" />
       <module name="consul-gateway" target="1.8" />
       <module name="consul-provider" target="1.8" />
       <module name="eureka-api" target="1.8" />

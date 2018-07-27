@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-client/consul-client.iml" filepath="$PROJECT_DIR$/consul-client/consul-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-config/consul-config.iml" filepath="$PROJECT_DIR$/consul-config/consul-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-gateway/consul-gateway.iml" filepath="$PROJECT_DIR$/consul-gateway/consul-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-provider/consul-provider.iml" filepath="$PROJECT_DIR$/consul-provider/consul-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-api/eureka-api.iml" filepath="$PROJECT_DIR$/eureka-api/eureka-api.iml" />

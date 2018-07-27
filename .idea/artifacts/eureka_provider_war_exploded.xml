@@ -16,6 +16,7 @@
           <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.56" />
           <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.56" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-core:2.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: com.netflix.eureka:eureka-client:1.9.2" />
@@ -74,6 +75,7 @@
           <element id="library" level="project" name="Maven: xpp3:xpp3_min:1.1.4c" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-webflux:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.0.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.10.0" />
@@ -160,8 +162,6 @@
           <element id="library" level="project" name="Maven: net.logstash.logback:logstash-logback-encoder:5.1" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.5" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.1.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
