@@ -23,4 +23,9 @@ public class EurekaFeignFallback implements EurekaFeignService{
     public String hello(@RequestBody User user) {
         return "error";
     }
+
+    @Override
+    public Integer hello1() {
+        return null;
+    }
 }

@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/consul-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consul-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consul-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-zipkinserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-dashboard" charset="UTF-8" />

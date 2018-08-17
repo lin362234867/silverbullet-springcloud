@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/consul-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/authorization-server/pom.xml" />
         <option value="$PROJECT_DIR$/consul-config/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-zipkinserver/pom.xml" />
       </list>
     </option>
   </component>

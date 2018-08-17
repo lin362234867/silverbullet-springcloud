@@ -14,6 +14,6 @@ public class ConsulClientController {
     private RestTemplate template;
     @RequestMapping("/consulClient")
     public String hello(){
-        return template.getForEntity("http://consul-provider/hello",String.class).getBody();
+        return template.getForEntity("http://CONSUL-PROVIDER/hello",String.class).getBody();
     }
 }

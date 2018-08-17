@@ -1,6 +1,12 @@
 spring:
   application:
     name: consul-gateway
+  zipkin:
+    baseUrl: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1.0
+
   cloud:
     #基于consul服务发现的配置
     consul:

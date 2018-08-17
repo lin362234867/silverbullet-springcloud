@@ -13,6 +13,7 @@
         <module name="consul-config" />
         <module name="consul-gateway" />
         <module name="consul-provider" />
+        <module name="consul-zipkinserver" />
         <module name="eureka-api" />
         <module name="eureka-client" />
         <module name="eureka-dashboard" />
@@ -31,6 +32,7 @@
       <module name="consul-config" target="1.8" />
       <module name="consul-gateway" target="1.8" />
       <module name="consul-provider" target="1.8" />
+      <module name="consul-zipkinserver" target="1.8" />
       <module name="eureka-api" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-dashboard" target="1.8" />
